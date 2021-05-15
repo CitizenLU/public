@@ -3,45 +3,6 @@ package org.example.leetcode;
 import java.util.Objects;
 
 public class AddTwoNumbers {
-    //Definition for singly-linked list.
-    public class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode() {
-        }
-
-        ListNode(int val) {
-            this.val = val;
-        }
-
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
-
-        public boolean equals(ListNode listNode){
-            ListNode that=this;
-            while (that.next!=null){
-                if (that.val==listNode.val){
-                    that=that.next;
-                    listNode=listNode.next;
-                }else {
-                    return false;
-                }
-            }
-            if (listNode.next==null){
-                return true;
-            }else {
-                return false;
-            }
-        }
-
-        @Override
-        public int hashCode(){
-            return Objects.hash(val);
-        }
-    }
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode head = null;
