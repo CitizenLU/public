@@ -7,21 +7,16 @@ import java.io.IOException;
 import java.util.*;
 
 public class Demo {
-    public String address;
-    public Demo(String address){
-        this.address=address;
-    }
-    public int hashCode(){
-        return address.hashCode();
+    public float sum(){
+        float a=0.1f;
+        float b=0.2f;
+        float c=a+b;
+        System.out.println(c);
+        return c;
     }
 
     public static void main(String[] args) {
-
-        try (FileInputStream fileInputStream = new FileInputStream("");
-             FileOutputStream fileOutputStream = new FileOutputStream("")) {
-        } catch (IOException e) {
-            System.out.println("");
-        }
+        System.out.println(new Demo().sum());
     }
 
 //    public void arraysCopy(int[] source) {
